@@ -2,18 +2,15 @@
 
 //OBS: Para calcular a média ponderada multiplica os valores das notas pelos valores dos pesos, e divide pelas somas de todos os pesos. Lembre-se de declarar valores para os pesos e para as notas.
 
-const n1 = 3;
-const p1 = 3.0;
+const n1 = 4;
+const p1 = 5;
 
-const n2 = 2.4;
-const p2 = 3.0;
+const n2 = 5;
+const p2 = 7;
 
-const n3 = 3.6;
-const p3 = 4.0;
+const n3 = 8;
+const p3 = 10;
 
-let media;
-media = n1 * p1, n2 * p2, n3 * p3 / 10;
+const media = (n1 * p1, n2 * p2, n3 * p3) / (p1 + p2 + p3);
 
-alert(
-  `A média total foi obtida pelo cálculo de:  \n ${n1} * ${p1} \n ${n2} * ${p2} \n ${n3} * ${p3} \n / ${p1} / ${p2} / ${p3},\n a media foi de ${media}!`
-);
+console.log("A média ponderada foi de: " , media.toFixed(2));
